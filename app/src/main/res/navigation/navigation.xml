@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigation"
+            app:startDestination="@id/herbsHomeFragment">
+
+    <fragment android:id="@+id/herbsHomeFragment"
+              android:name="buu.informatics.c59160130.miniproject02.herbsHomeFragment"
+              android:label="fragment_herbs_home" tools:layout="@layout/fragment_herbs_home">
+        <action android:id="@+id/action_herbsHomeFragment_to_diseaseTypeFragment"
+                app:destination="@id/diseaseTypeFragment"/>
+    </fragment>
+    <fragment android:id="@+id/diseaseTypeFragment"
+              android:name="buu.informatics.c59160130.miniproject02.diseaseTypeFragment"
+              android:label="fragment_disease_type" tools:layout="@layout/fragment_disease_type">
+        <action
+                android:id="@+id/action_diseaseTypeFragment_to_herbsFragment"
+                app:destination="@id/herbsFragment" />
+        <action
+                android:id="@+id/action_diseaseTypeFragment_to_herbsHomeFragment"
+                app:destination="@id/herbsHomeFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/herbsFragment"
+            android:name="buu.informatics.c59160130.miniproject02.herbsFragment"
+            android:label="fragment_herbs"
+            tools:layout="@layout/fragment_herbs" >
+        <action
+                android:id="@+id/action_herbsFragment_to_diseaseTypeFragment"
+                app:destination="@id/diseaseTypeFragment" />
+        <action
+                android:id="@+id/action_herbsFragment_to_herbsHomeFragment"
+                app:destination="@id/herbsHomeFragment" />
+    </fragment>
+</navigation>
