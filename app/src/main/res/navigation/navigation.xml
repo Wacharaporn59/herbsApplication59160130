@@ -32,4 +32,9 @@
                 android:id="@+id/action_herbsFragment_to_herbsHomeFragment"
                 app:destination="@id/herbsHomeFragment" />
     </fragment>
+    <fragment
+            android:id="@+id/aboutFragment"
+            android:name="buu.informatics.c59160130.miniproject02.aboutFragment"
+            android:label="fragment_about"
+            tools:layout="@layout/fragment_about" />
 </navigation>
