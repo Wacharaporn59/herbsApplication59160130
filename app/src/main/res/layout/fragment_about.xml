@@ -28,7 +28,7 @@
                 android:layout_width="282dp"
                 android:layout_height="100dp"
                 android:layout_marginTop="20dp"
-                android:text="แอพพลิเคชั่น Herbs เป็นแอพที่รวบรวมพืชสมุนไพรประจำบ้าน และพืชสมุนไพรชนิดอื่นๆ เพื่อบำบัดโรค บำรุง ร่างกาย ซึ่งจะแบ่งตามกลุ่มอาการ โดยมีสมุนไพรมาดดว่า 100 ชนิด สามารถนำความรู้ไปใช้ในชีวิตประจำวันได้"
+                android:text="แอพพลิเคชั่น Herbs เป็นแอพที่รวบรวมพืชสมุนไพรประจำบ้าน และพืชสมุนไพรชนิดอื่นๆ เพื่อบำบัดโรค บำรุง ร่างกาย สามารถนำความรู้ไปใช้ในชีวิตประจำวันได้"
                 android:textColor="@android:color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

@@ -7,8 +7,7 @@ import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
-import buu.informatics.c59160130.miniproject02.databinding.FragmentDiseaseTypeBinding
-import buu.informatics.c59160130.miniproject02.databinding.FragmentHerbsHomeBinding
+import buu.informatics.c59160130.miniproject02.databinding.FragmentHerbsThaiBinding
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -20,18 +19,18 @@ private const val ARG_PARAM2 = "param2"
  * A simple [Fragment] subclass.
  *
  */
-class diseaseTypeFragment : Fragment() {
+class herbsThaiFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val binding = DataBindingUtil.inflate<FragmentDiseaseTypeBinding>(inflater,R.layout.fragment_disease_type,container,false)
-        binding.diseaseTypeButton02.setOnClickListener { view ->
-            view.findNavController().navigate(R.id.action_diseaseTypeFragment_to_herbsFragment)
-        }
+        val binding = DataBindingUtil.inflate<FragmentHerbsThaiBinding>(inflater,R.layout.fragment_herbs_thai,container,false)
         binding.homeHerbButton02.setOnClickListener { view ->
-            view.findNavController().navigate(R.id.action_diseaseTypeFragment_to_herbsHomeFragment)
+            view.findNavController().navigate(R.id.action_herbsThaiFragment_to_herbsHomeFragment)
+        }
+        binding.thaiHerbButton02.setOnClickListener { view ->
+            view.findNavController().navigate(R.id.action_herbsThaiFragment_self)
         }
         setHasOptionsMenu(true)
         return binding.root

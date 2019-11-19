@@ -21,14 +21,19 @@ private const val ARG_PARAM2 = "param2"
  */
 class herbsHomeFragment : Fragment() {
 
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         val binding = DataBindingUtil.inflate<FragmentHerbsHomeBinding>(inflater,R.layout.fragment_herbs_home,container,false)
-        binding.diseaseTypeButton01.setOnClickListener { view ->
-            view.findNavController().navigate(R.id.action_herbsHomeFragment_to_diseaseTypeFragment)
+        binding.homeHerbButton01.setOnClickListener { view ->
+            view.findNavController().navigate(R.id.action_herbsHomeFragment_self)
         }
+        binding.thaiHerbButton01.setOnClickListener { view ->
+            view.findNavController().navigate(R.id.action_herbsHomeFragment_to_herbsThaiFragment)
+        }
+
         setHasOptionsMenu(true)
 
         return binding.root
@@ -39,9 +44,9 @@ class herbsHomeFragment : Fragment() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return NavigationUI.onNavDestinationSelected(item!!,
-            view!!.findNavController()) || super.onOptionsItemSelected(item)
+        return NavigationUI.onNavDestinationSelected(item!!, view!!.findNavController()) || super.onOptionsItemSelected(item)
     }
+
 
 
 

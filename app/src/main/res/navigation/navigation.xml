@@ -2,34 +2,16 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigation"
-            app:startDestination="@id/herbsHomeFragment">
+            app:startDestination="@id/loginFragment">
 
     <fragment android:id="@+id/herbsHomeFragment"
               android:name="buu.informatics.c59160130.miniproject02.herbsHomeFragment"
               android:label="fragment_herbs_home" tools:layout="@layout/fragment_herbs_home">
-        <action android:id="@+id/action_herbsHomeFragment_to_diseaseTypeFragment"
-                app:destination="@id/diseaseTypeFragment"/>
-    </fragment>
-    <fragment android:id="@+id/diseaseTypeFragment"
-              android:name="buu.informatics.c59160130.miniproject02.diseaseTypeFragment"
-              android:label="fragment_disease_type" tools:layout="@layout/fragment_disease_type">
         <action
-                android:id="@+id/action_diseaseTypeFragment_to_herbsFragment"
-                app:destination="@id/herbsFragment" />
+                android:id="@+id/action_herbsHomeFragment_to_herbsThaiFragment"
+                app:destination="@id/herbsThaiFragment" />
         <action
-                android:id="@+id/action_diseaseTypeFragment_to_herbsHomeFragment"
-                app:destination="@id/herbsHomeFragment" />
-    </fragment>
-    <fragment
-            android:id="@+id/herbsFragment"
-            android:name="buu.informatics.c59160130.miniproject02.herbsFragment"
-            android:label="fragment_herbs"
-            tools:layout="@layout/fragment_herbs" >
-        <action
-                android:id="@+id/action_herbsFragment_to_diseaseTypeFragment"
-                app:destination="@id/diseaseTypeFragment" />
-        <action
-                android:id="@+id/action_herbsFragment_to_herbsHomeFragment"
+                android:id="@+id/action_herbsHomeFragment_self"
                 app:destination="@id/herbsHomeFragment" />
     </fragment>
     <fragment
@@ -37,4 +19,27 @@
             android:name="buu.informatics.c59160130.miniproject02.aboutFragment"
             android:label="fragment_about"
             tools:layout="@layout/fragment_about" />
+    <fragment
+            android:id="@+id/herbsThaiFragment"
+            android:name="buu.informatics.c59160130.miniproject02.herbsThaiFragment"
+            android:label="herbsThaiFragment" >
+        <action
+                android:id="@+id/action_herbsThaiFragment_to_herbsHomeFragment"
+                app:destination="@id/herbsHomeFragment" />
+        <action
+                android:id="@+id/action_herbsThaiFragment_self"
+                app:destination="@id/herbsThaiFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/loginFragment"
+            android:name="buu.informatics.c59160130.miniproject02.loginFragment"
+            android:label="fragment_login"
+            tools:layout="@layout/fragment_login" >
+        <action
+                android:id="@+id/action_loginFragment_to_herbsHomeFragment"
+                app:destination="@id/herbsHomeFragment" />
+        <action
+                android:id="@+id/action_loginFragment_self"
+                app:destination="@id/loginFragment" />
+    </fragment>
 </navigation>
