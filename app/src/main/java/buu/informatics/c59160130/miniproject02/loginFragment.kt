@@ -29,12 +29,11 @@ class loginFragment : Fragment() {
     ): View? {
         val binding = DataBindingUtil.inflate<FragmentLoginBinding>(inflater,R.layout.fragment_login,container,false)
         binding.loginButton.setOnClickListener { view ->
-            var status = if(username_editText.text.toString().equals("Wacharaporn") && password_editText.text.toString().equals("59160130")){
+            if(username_editText.text.toString().equals("Wacharaporn") && password_editText.text.toString().equals("59160130")){
                 Toast.makeText(context,"เข้าสู่ระบบสำเร็จ ยินดีต้อนรับ", Toast.LENGTH_SHORT).show().run { view.findNavController().navigate(R.id.action_loginFragment_to_herbsHomeFragment)}
             }else{
                 Toast.makeText(context,"ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง กรุณาลองอีกครั้ง", Toast.LENGTH_SHORT).show().run { view.findNavController().navigate(R.id.action_loginFragment_self)}
             }
-            view.findNavController().navigate(R.id.action_loginFragment_to_herbsHomeFragment)
         }
         setHasOptionsMenu(true)
         return binding.root

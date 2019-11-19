@@ -20,8 +20,8 @@
 
         <Button
                 android:id="@+id/homeHerb_button02"
-                android:layout_width="205dp"
-                android:layout_height="57dp"
+                android:layout_width="201dp"
+                android:layout_height="54dp"
                 android:layout_marginTop="48dp"
                 android:text="สมุนไพรประจำบ้าน"
                 app:layout_constraintEnd_toStartOf="@+id/thaiHerb_button02"
@@ -32,8 +32,8 @@
 
         <Button
                 android:id="@+id/thaiHerb_button02"
-                android:layout_width="207dp"
-                android:layout_height="55dp"
+                android:layout_width="201dp"
+                android:layout_height="54dp"
                 android:text="สมุนไพรไทย"
                 app:layout_constraintBaseline_toBaselineOf="@id/homeHerb_button02"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -48,7 +48,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="100dp"
                 android:layout_marginEnd="8dp"
-                android:text="พืชสมุนไพร1"
+                android:text="พืชสมุนไพร"
                 android:textColor="@color/colorPrimary"
                 android:textSize="30sp"
                 app:layout_constraintEnd_toEndOf="parent"
