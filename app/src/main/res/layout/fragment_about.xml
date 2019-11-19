@@ -7,29 +7,42 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@drawable/bg01">
 
         <TextView
-                android:id="@+id/about_textView"
+                android:id="@+id/titleAbout_textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="44dp"
+                android:layout_marginTop="112dp"
                 android:text="@string/about_textView"
+                android:textColor="@color/colorPrimaryDark"
                 android:textSize="30sp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-                android:id="@+id/allAbout_textView"
-                android:layout_width="319dp"
-                android:layout_height="260dp"
-                android:text="แอพพลิเคชั่น Herbs เป็นแอพที่รวบรวมพืชสมุนไพรประจำบ้าน และพืชสมุนไพรชนิดอื่นๆ เพื่อบำบัดโรค บำรุง ร่างกาย ซึ่งจะแบ่งตามกลุ่มอาการ สามารถนำความรู้ไปใช้ในชีวิตประจำวันได้"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:id="@+id/about_textView01"
+                android:layout_width="282dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:text="แอพพลิเคชั่น Herbs เป็นแอพที่รวบรวมพืชสมุนไพรประจำบ้าน และพืชสมุนไพรชนิดอื่นๆ เพื่อบำบัดโรค บำรุง ร่างกาย ซึ่งจะแบ่งตามกลุ่มอาการ โดยมีสมุนไพรมาดดว่า 100 ชนิด สามารถนำความรู้ไปใช้ในชีวิตประจำวันได้"
+                android:textColor="@android:color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/about_textView"
-                app:layout_constraintVertical_bias="0.139" />
+                app:layout_constraintTop_toBottomOf="@+id/titleAbout_textView" />
+
+        <TextView
+                android:id="@+id/about_textView02"
+                android:layout_width="282dp"
+                android:layout_height="100dp"
+                android:text="คุณสมบัติของแอพ คือ สามารถใช้งานแบบออฟไลน์ได้, เป็นแอพที่ไม่เสียค่าใช้จ่าย"
+                android:textColor="@android:color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/about_textView01" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
