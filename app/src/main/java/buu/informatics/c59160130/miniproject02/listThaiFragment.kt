@@ -19,7 +19,7 @@ class listThaiFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_list_thai, container, false)
+        //return inflater.inflate(R.layout.fragment_list_thai, container, false)
 
         val binding = DataBindingUtil.inflate<FragmentListThaiBinding>(inflater, R.layout.fragment_list_thai, container, false)
 

@@ -19,7 +19,7 @@ class listHomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_list_home, container, false)
+        //return inflater.inflate(R.layout.fragment_list_home, container, false)
 
         val binding = DataBindingUtil.inflate<FragmentListHomeBinding>(inflater, R.layout.fragment_list_home, container, false)
 
