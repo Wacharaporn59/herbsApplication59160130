@@ -57,6 +57,8 @@ class listThaiFragment : Fragment() {
                 "สรรพคุณ : แก้ท้องอืด ท้องเฟ้อ แน่น จุกเสียด"))
 
         binding.listThaiView.adapter = this.context?.let { customAdapter02(it,arrList02) }
+
+        return binding.root
     }
 
 

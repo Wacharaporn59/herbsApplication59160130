@@ -52,10 +52,9 @@ class listHomeFragment : Fragment() {
         arrList01.add(ListHomeData("ว่านหางจระเข้\n" +
                 "สรรพคุณ : ช่วยรักษาแผลไฟไหม้ น้ำร้อนลวก บรรเทาอาการแสบร้อน ปกป้องแผลจากการติดเชื้อ "))
 
-
-
-
         binding.listHomeView.adapter = this.context?.let { customAdapter(it, arrList01) }
+
+        return binding.root
 
     }
 
