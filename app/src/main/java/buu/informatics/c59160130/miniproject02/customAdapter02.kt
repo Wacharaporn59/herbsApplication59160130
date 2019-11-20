@@ -6,7 +6,7 @@ import android.view.*
 import android.widget.BaseAdapter
 import android.widget.TextView
 
-class customAdapter02(var context: Context, var listType: ArrayList<ListData>): BaseAdapter() {
+class customAdapter02(var context: Context, var listType02: ArrayList<ListThaiData>): BaseAdapter() {
     private class ViewHolder(row: View?){
         var textName: TextView
 
@@ -28,14 +28,14 @@ class customAdapter02(var context: Context, var listType: ArrayList<ListData>): 
             view = convertView
             viewHolder = view.tag as ViewHolder
         }
-        var ListThai:ListData = getItem(position) as ListData
-        viewHolder.textName.text = ListThai.name
+        var ListThai:ListThaiData = getItem(position) as ListThaiData
+        viewHolder.textName.text = ListThai.Thai
         return view as View
 
     }
 
     override fun getItem(position: Int): Any {
-        return listType.get(position)
+        return listType02.get(position)
     }
 
     override fun getItemId(position: Int): Long {
@@ -43,6 +43,6 @@ class customAdapter02(var context: Context, var listType: ArrayList<ListData>): 
     }
 
     override fun getCount(): Int {
-        return listType.count();
+        return listType02.count();
     }
 }

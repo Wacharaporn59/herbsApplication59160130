@@ -23,39 +23,40 @@ class listHomeFragment : Fragment() {
 
         val binding = DataBindingUtil.inflate<FragmentListHomeBinding>(inflater, R.layout.fragment_list_home, container, false)
 
-        var arrList: ArrayList<ListData> = ArrayList()
+        var arrList01: ArrayList<ListHomeData> = ArrayList()
 
-        arrList.add(ListData("กะเพราแดง\n" +
+        arrList01.add(ListHomeData("กะเพราแดง\n" +
                 "สรรพคุณ : แก้ปวดท้อง ท้องอืด แก้ลมจุดเสียด แน่นท้อง ขับลม"))
 
-        arrList.add(ListData("ขิง\n" +
+        arrList01.add(ListHomeData("ขิง\n" +
                 "สรรพคุณ : บรรเทาอาการท้องอืด ขับลม แน่น จุกเสียด"))
 
-        arrList.add(ListData("ตะไคร้\n" +
+        arrList01.add(ListHomeData("ตะไคร้\n" +
                 "สรรพคุณ : ลดคอเลสเตอรอล ลดความดันโลหิตสูง ลดอาการท้องอีดท้องเฟ้อ"))
 
-        arrList.add(ListData("ช้าพลู\n" +
+        arrList01.add(ListHomeData("ช้าพลู\n" +
                 "สรรพคุณ : ทำให้เจริญอาหาร ขับลม แก้ท้องอืด"))
 
-        arrList.add(ListData("บัวบก\n" +
+        arrList01.add(ListHomeData("บัวบก\n" +
                 "สรรพคุณ : แก้ช้ำใน"))
 
-        arrList.add(ListData("ฟ้าทะลายโจร\n" +
+        arrList01.add(ListHomeData("ฟ้าทะลายโจร\n" +
                 "สรรพคุณ : บรรเทาอาการเจ็บคอ หวัดและสร้างภูมิคุ้มกันให้ร่างกาย"))
 
-        arrList.add(ListData("มะกรูด\n" +
+        arrList01.add(ListHomeData("มะกรูด\n" +
                 "สรรพคุณ : แก้อาการหน้ามืด วิงวียน แก้ไอ ขับเสมหะ"))
 
-        arrList.add(ListData("มะระขี้นก\n" +
+        arrList01.add(ListHomeData("มะระขี้นก\n" +
                 "สรรพคุณ : แก้ไข้ แก้ร้อนใน เจริญอาหาร"))
 
-        arrList.add(ListData("ว่านหางจระเข้\n" +
+        arrList01.add(ListHomeData("ว่านหางจระเข้\n" +
                 "สรรพคุณ : ช่วยรักษาแผลไฟไหม้ น้ำร้อนลวก บรรเทาอาการแสบร้อน ปกป้องแผลจากการติดเชื้อ "))
 
 
 
 
-        binding.listView.adapter = this.context?.let { customAdapter(it,arrList) }
+        binding.listView.adapter = this.context?.let { customAdapter(it, arrList01) }
+
     }
 
 
