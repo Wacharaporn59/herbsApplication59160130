@@ -7,4 +7,5 @@
     <string name="about_textView">เกี่ยวกับเรา</string>
     <string name="shared">shared</string>
     <string name="share_success_text">share_success_text</string>
+    <string name="ListHarbsdata">harbData</string>
 </resources>

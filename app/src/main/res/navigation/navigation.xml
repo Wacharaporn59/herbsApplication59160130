@@ -4,32 +4,11 @@
             xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigation"
             app:startDestination="@id/loginFragment">
 
-    <fragment android:id="@+id/herbsHomeFragment"
-              android:name="buu.informatics.c59160130.miniproject02.herbsHomeFragment"
-              android:label="fragment_herbs_home" tools:layout="@layout/fragment_herbs_home">
-        <action
-                android:id="@+id/action_herbsHomeFragment_to_herbsThaiFragment"
-                app:destination="@id/herbsThaiFragment" />
-        <action
-                android:id="@+id/action_herbsHomeFragment_self"
-                app:destination="@id/herbsHomeFragment" />
-    </fragment>
     <fragment
             android:id="@+id/aboutFragment"
             android:name="buu.informatics.c59160130.miniproject02.aboutFragment"
             android:label="fragment_about"
             tools:layout="@layout/fragment_about" />
-    <fragment
-            android:id="@+id/herbsThaiFragment"
-            android:name="buu.informatics.c59160130.miniproject02.herbsThaiFragment"
-            android:label="herbsThaiFragment" >
-        <action
-                android:id="@+id/action_herbsThaiFragment_to_herbsHomeFragment"
-                app:destination="@id/herbsHomeFragment" />
-        <action
-                android:id="@+id/action_herbsThaiFragment_self"
-                app:destination="@id/herbsThaiFragment" />
-    </fragment>
     <fragment
             android:id="@+id/loginFragment"
             android:name="buu.informatics.c59160130.miniproject02.loginFragment"
@@ -42,4 +21,26 @@
                 android:id="@+id/action_loginFragment_self"
                 app:destination="@id/loginFragment" />
     </fragment>
+    <fragment
+            android:id="@+id/herbsHomeFragment"
+            android:name="buu.informatics.c59160130.miniproject02.herbsHomeFragment"
+            android:label="fragment_herbs_title"
+            tools:layout="@layout/fragment_herbs_title" >
+        <action
+                android:id="@+id/action_herbsHomeFragment_to_listHomeFragment"
+                app:destination="@id/listHomeFragment" />
+        <action
+                android:id="@+id/action_herbsHomeFragment_to_listThaiFragment"
+                app:destination="@id/listThaiFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/listHomeFragment"
+            android:name="buu.informatics.c59160130.miniproject02.listHomeFragment"
+            android:label="fragment_list_home"
+            tools:layout="@layout/fragment_list_home" />
+    <fragment
+            android:id="@+id/listThaiFragment"
+            android:name="buu.informatics.c59160130.miniproject02.listThaiFragment"
+            android:label="fragment_list_thai"
+            tools:layout="@layout/fragment_list_thai" />
 </navigation>

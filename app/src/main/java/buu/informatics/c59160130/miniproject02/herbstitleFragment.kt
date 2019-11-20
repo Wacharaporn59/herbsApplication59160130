@@ -7,7 +7,7 @@ import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
-import buu.informatics.c59160130.miniproject02.databinding.FragmentHerbsHomeBinding
+import buu.informatics.c59160130.miniproject02.databinding.FragmentHerbsTitleBinding
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -26,17 +26,24 @@ class herbsHomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val binding = DataBindingUtil.inflate<FragmentHerbsHomeBinding>(inflater,R.layout.fragment_herbs_home,container,false)
+        val binding = DataBindingUtil.inflate<FragmentHerbsTitleBinding>(inflater,R.layout.fragment_herbs_title,container,false)
         binding.homeHerbButton01.setOnClickListener { view ->
-            view.findNavController().navigate(R.id.action_herbsHomeFragment_self)
+            view.findNavController().navigate(R.id.action_herbsHomeFragment_to_listHomeFragment)
         }
         binding.thaiHerbButton01.setOnClickListener { view ->
-            view.findNavController().navigate(R.id.action_herbsHomeFragment_to_herbsThaiFragment)
+            view.findNavController().navigate(R.id.action_herbsHomeFragment_to_listThaiFragment)
         }
+
+
+
+
+
 
         setHasOptionsMenu(true)
 
         return binding.root
+
+
     }
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         super.onCreateOptionsMenu(menu, inflater)
