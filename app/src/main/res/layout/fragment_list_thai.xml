@@ -10,7 +10,7 @@
             tools:context="buu.informatics.c59160130.miniproject02.listThaiFragment">
 
         <ListView
-                android:id="@+id/listView"
+                android:id="@+id/listThaiView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
     </RelativeLayout>

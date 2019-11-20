@@ -55,7 +55,7 @@ class listHomeFragment : Fragment() {
 
 
 
-        binding.listView.adapter = this.context?.let { customAdapter(it, arrList01) }
+        binding.listHomeView.adapter = this.context?.let { customAdapter(it, arrList01) }
 
     }
 

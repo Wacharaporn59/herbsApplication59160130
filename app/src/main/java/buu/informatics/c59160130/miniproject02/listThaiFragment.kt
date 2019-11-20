@@ -56,7 +56,7 @@ class listThaiFragment : Fragment() {
         arrList02.add(ListThaiData("กระชาย\n" +
                 "สรรพคุณ : แก้ท้องอืด ท้องเฟ้อ แน่น จุกเสียด"))
 
-        binding.listView.adapter = this.context?.let { customAdapter02(it,arrList02) }
+        binding.listThaiView.adapter = this.context?.let { customAdapter02(it,arrList02) }
     }
 
 
